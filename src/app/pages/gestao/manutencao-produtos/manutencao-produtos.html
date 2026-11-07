@@ -1,11 +1,9 @@
 <div class="content-container">
-
-
     <div class="tabela-container">
         <div class="topo">
             <h1>Produtos Cadastrados</h1>
             <form class="busca" action="">
-                <input type="search" name="search" id="search" placeholder="Buscar...">
+                <input type="search" name="search" id="search" placeholder="Buscar..." />
             </form>
         </div>
 
@@ -25,7 +23,7 @@
             </thead>
 
             <tbody>
-
+                <!-- 
                 @for (produto of listaProdutos; track produto ){
                 <tr>
                     <td>{{ produto.id }}</td>
@@ -47,15 +45,12 @@
                         </button>
                     </td>
                 </tr>
-                }
-
+                } -->
             </tbody>
         </table>
     </div>
 
-
     <button class="btn-incluir" (click)="onBotaoClicado()" routerLink="/gestao/controle-produtos">
         Incluir
     </button>
-
 </div>

@@ -1,0 +1,55 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Violão Acústico",
+            "imagem": "",
+            "preco": 1349.99,
+            "desconto": 0.2,
+            "marca": "Genérica",
+            "categoria": "Cordas",
+            "estoque": 13
+        },
+        {
+            "id": 2,
+            "nome": "Bateria Acústica",
+            "imagem": "",
+            "preco": 4890.99,
+            "desconto": 0,
+            "marca": "Genérica",
+            "categoria": "Cordas",
+            "estoque": 1
+        },
+        {
+            "id": 3,
+            "nome": "Teclado Digital 61 Teclas",
+            "imagem": "",
+            "preco": 4890.99,
+            "desconto": 0,
+            "marca": "Genérica",
+            "categoria": "Cordas",
+            "estoque": 1
+        },
+        {
+            "id": 4,
+            "nome": "Fone de Ouvido Studio",
+            "imagem": "https://kzmusicstore.com.br/cdn/shop/files/kz-zsn-pro-kz-music-store-14.png?v=1716585548&width=1000",
+            "preco": 390,
+            "desconto": 0.15,
+            "marca": "Genérica",
+            "categoria": "",
+            "estoque": 110
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "cpf": "12345678910",
+            "nome": "Enzo",
+            "sobrenome": "Silva",
+            "dtNascimento": "2005-01-10",
+            "email": "enzo@email.com",
+            "senha": "teste123"
+        }
+    ]
+}
