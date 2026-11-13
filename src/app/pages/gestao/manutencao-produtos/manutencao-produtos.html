@@ -24,8 +24,8 @@
                     <th>Marca</th>
                     <th>Categoria</th>
                     <th>Estoque</th>
-                    <!-- <th>Valor do Desconto</th>
-                    <th>Valor Final</th> -->
+                    <th>Valor do Desconto</th>
+                    <th>Valor Final</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -35,15 +35,15 @@
                 @for (produto of listaProdutos; track produto.id ){
                 <tr>
                     <td>{{ produto.id }}</td>
-                    <td class="imagem"><img src={{produto.imagem}}></td>
+                    <td class="imagem"><img src={{produto.imagem}} alt=""></td>
                     <td>{{ produto.nome }}</td>
                     <td>R$ {{ produto.preco}}</td>
                     <td>{{ produto.desconto }}%</td>
                     <td>{{ produto.marca }} </td>
                     <td>{{ produto.categoria }}</td>
                     <td>{{ produto.estoque }}</td>
-                    <!-- <td>R$ {{ produto.valorDesconto}}</td>
-                    <td>R$ {{ produto.totalFinal }}</td> -->
+                    <td>R$ {{ (produto.preco * produto.desconto).toFixed(2)}}</td>
+                    <td>R$ {{ (produto.preco - (produto.preco * produto.desconto)).toFixed(2) }}</td>
 
                     <td class="acoes">
                         <button class="btn-editar" [routerLink]="['/gestao/formulario-produtos', produto.id]">

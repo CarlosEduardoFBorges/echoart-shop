@@ -1,7 +1,9 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectorRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ProdutoService } from '../../../services/produto.service';
 import { Produto } from '../../../models/Produtos';
+import { Router } from '@angular/router';
+
 
 @Component({
     imports: [RouterLink],
@@ -12,6 +14,9 @@ import { Produto } from '../../../models/Produtos';
 export class ManutencaoProdutos {
 
     private service = inject(ProdutoService);
+    // pra corrigir o erro chato de não atualizar o @for do html quando carrega a página:
+    private cdr = inject(ChangeDetectorRef);
+    private router = inject(Router);
 
     listaProdutos: Produto[] = [];
 
@@ -21,6 +26,7 @@ export class ManutencaoProdutos {
                 console.log('Produtos recebidos:', produtos);
 
                 this.listaProdutos = produtos;
+                this.cdr.markForCheck();
 
                 console.log('Lista atribuída:', this.listaProdutos);
             },
@@ -41,6 +47,7 @@ export class ManutencaoProdutos {
                 next: () => {
 
                     this.listaProdutos = this.listaProdutos.filter(produto => produto.id !== id);
+                    this.router.navigate(['/gestao/manutencao-produtos']);
                 }
             });
         }

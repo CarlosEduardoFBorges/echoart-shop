@@ -7,8 +7,6 @@ export class Produto {
     marca: string;
     categoria: string;
     estoque: number;
-    valorDesconto: number;
-    totalFinal: number;
 
     constructor(
         id: string,
@@ -28,7 +26,5 @@ export class Produto {
         this.marca = marca;
         this.categoria = categoria;
         this.estoque = estoque;
-        this.valorDesconto = this.preco * this.desconto;
-        this.totalFinal = this.preco - this.valorDesconto;
     }
 }

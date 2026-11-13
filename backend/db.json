@@ -1,7 +1,7 @@
 {
   "produtos": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Violão Acústico Nylon",
       "imagem": "",
       "preco": 899.9,
@@ -11,7 +11,7 @@
       "estoque": 12
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Violão Eletroacústico Folk",
       "imagem": "",
       "preco": 1799.9,
@@ -21,7 +21,7 @@
       "estoque": 7
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Guitarra Elétrica Stratocaster",
       "imagem": "",
       "preco": 2199.9,
@@ -31,7 +31,7 @@
       "estoque": 8
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Guitarra Les Paul",
       "imagem": "",
       "preco": 3299.9,
@@ -41,7 +41,7 @@
       "estoque": 4
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Contrabaixo Elétrico 4 Cordas",
       "imagem": "",
       "preco": 1899.9,
@@ -51,7 +51,7 @@
       "estoque": 6
     },
     {
-      "id": 6,
+      "id": "6",
       "nome": "Ukulele Soprano",
       "imagem": "",
       "preco": 249.9,
@@ -61,7 +61,7 @@
       "estoque": 20
     },
     {
-      "id": 7,
+      "id": "7",
       "nome": "Violino 4/4",
       "imagem": "",
       "preco": 799.9,
@@ -71,7 +71,7 @@
       "estoque": 5
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "Cavaquinho Acústico",
       "imagem": "",
       "preco": 429.9,
@@ -81,7 +81,7 @@
       "estoque": 9
     },
     {
-      "id": 9,
+      "id": "9",
       "nome": "Violoncelo 4/4",
       "imagem": "",
       "preco": 3499.9,
@@ -91,7 +91,7 @@
       "estoque": 2
     },
     {
-      "id": 10,
+      "id": "10",
       "nome": "Viola Caipira 10 Cordas",
       "imagem": "",
       "preco": 1199.9,
@@ -101,7 +101,7 @@
       "estoque": 6
     },
     {
-      "id": 11,
+      "id": "11",
       "nome": "Bateria Acústica Completa",
       "imagem": "",
       "preco": 4890.99,
@@ -111,7 +111,7 @@
       "estoque": 3
     },
     {
-      "id": 12,
+      "id": "12",
       "nome": "Bateria Eletrônica",
       "imagem": "",
       "preco": 4299.9,
@@ -121,7 +121,7 @@
       "estoque": 3
     },
     {
-      "id": 13,
+      "id": "13",
       "nome": "Cajón Acústico",
       "imagem": "",
       "preco": 499.9,
@@ -131,7 +131,7 @@
       "estoque": 12
     },
     {
-      "id": 14,
+      "id": "14",
       "nome": "Pandeiro Profissional",
       "imagem": "",
       "preco": 189.9,
@@ -141,7 +141,7 @@
       "estoque": 25
     },
     {
-      "id": 15,
+      "id": "15",
       "nome": "Surdo de Samba",
       "imagem": "",
       "preco": 699.9,
@@ -151,7 +151,7 @@
       "estoque": 7
     },
     {
-      "id": 16,
+      "id": "16",
       "nome": "Bongô",
       "imagem": "",
       "preco": 359.9,
@@ -161,7 +161,7 @@
       "estoque": 10
     },
     {
-      "id": 17,
+      "id": "17",
       "nome": "Atabaque Profissional",
       "imagem": "",
       "preco": 649.9,
@@ -171,7 +171,7 @@
       "estoque": 8
     },
     {
-      "id": 18,
+      "id": "18",
       "nome": "Agogô Duplo",
       "imagem": "",
       "preco": 89.9,
@@ -181,7 +181,7 @@
       "estoque": 25
     },
     {
-      "id": 19,
+      "id": "19",
       "nome": "Repinique de Samba",
       "imagem": "",
       "preco": 459.9,
@@ -191,7 +191,7 @@
       "estoque": 6
     },
     {
-      "id": 20,
+      "id": "20",
       "nome": "Prato de Ataque 16 Polegadas",
       "imagem": "",
       "preco": 799.9,
@@ -201,7 +201,7 @@
       "estoque": 4
     },
     {
-      "id": 21,
+      "id": "21",
       "nome": "Teclado Digital 61 Teclas",
       "imagem": "",
       "preco": 1499.9,
@@ -211,7 +211,7 @@
       "estoque": 10
     },
     {
-      "id": 22,
+      "id": "22",
       "nome": "Piano Digital 88 Teclas",
       "imagem": "",
       "preco": 5299.9,
@@ -221,7 +221,7 @@
       "estoque": 3
     },
     {
-      "id": 23,
+      "id": "23",
       "nome": "Controlador MIDI 49 Teclas",
       "imagem": "",
       "preco": 1299.9,
@@ -231,7 +231,7 @@
       "estoque": 7
     },
     {
-      "id": 24,
+      "id": "24",
       "nome": "Sintetizador Analógico",
       "imagem": "",
       "preco": 3899.9,
@@ -241,7 +241,7 @@
       "estoque": 2
     },
     {
-      "id": 25,
+      "id": "25",
       "nome": "Acordeon 80 Baixos",
       "imagem": "",
       "preco": 4499.9,
@@ -251,7 +251,7 @@
       "estoque": 2
     },
     {
-      "id": 26,
+      "id": "26",
       "nome": "Órgão Eletrônico",
       "imagem": "",
       "preco": 2799.9,
@@ -261,7 +261,7 @@
       "estoque": 4
     },
     {
-      "id": 27,
+      "id": "27",
       "nome": "Piano de Cauda",
       "imagem": "",
       "preco": 45999.9,
@@ -271,7 +271,7 @@
       "estoque": 1
     },
     {
-      "id": 28,
+      "id": "28",
       "nome": "Teclado Arranjador 76 Teclas",
       "imagem": "",
       "preco": 5999.9,
@@ -281,7 +281,7 @@
       "estoque": 2
     },
     {
-      "id": 29,
+      "id": "29",
       "nome": "Controlador MIDI 25 Teclas",
       "imagem": "",
       "preco": 599.9,
@@ -291,7 +291,7 @@
       "estoque": 8
     },
     {
-      "id": 30,
+      "id": "30",
       "nome": "Piano Digital Portátil",
       "imagem": "",
       "preco": 2199.9,
@@ -301,7 +301,7 @@
       "estoque": 5
     },
     {
-      "id": 31,
+      "id": "31",
       "nome": "Saxofone Alto",
       "imagem": "",
       "preco": 3299.9,
@@ -311,7 +311,7 @@
       "estoque": 4
     },
     {
-      "id": 32,
+      "id": "32",
       "nome": "Trompete Bb",
       "imagem": "",
       "preco": 1599.9,
@@ -321,7 +321,7 @@
       "estoque": 7
     },
     {
-      "id": 33,
+      "id": "33",
       "nome": "Flauta Transversal",
       "imagem": "",
       "preco": 899.9,
@@ -331,7 +331,7 @@
       "estoque": 6
     },
     {
-      "id": 34,
+      "id": "34",
       "nome": "Clarinete Bb",
       "imagem": "",
       "preco": 1399.9,
@@ -341,7 +341,7 @@
       "estoque": 3
     },
     {
-      "id": 35,
+      "id": "35",
       "nome": "Trombone de Vara",
       "imagem": "",
       "preco": 2799.9,
@@ -351,7 +351,7 @@
       "estoque": 3
     },
     {
-      "id": 36,
+      "id": "36",
       "nome": "Gaita Diatônica",
       "imagem": "",
       "preco": 179.9,
@@ -361,7 +361,7 @@
       "estoque": 18
     },
     {
-      "id": 37,
+      "id": "37",
       "nome": "Oboé Profissional",
       "imagem": "",
       "preco": 6899.9,
@@ -371,7 +371,7 @@
       "estoque": 1
     },
     {
-      "id": 38,
+      "id": "38",
       "nome": "Flautim Piccolo",
       "imagem": "",
       "preco": 1899.9,
@@ -381,7 +381,7 @@
       "estoque": 2
     },
     {
-      "id": 39,
+      "id": "39",
       "nome": "Tuba Sinfônica",
       "imagem": "",
       "preco": 9999.9,
@@ -391,7 +391,7 @@
       "estoque": 1
     },
     {
-      "id": 40,
+      "id": "40",
       "nome": "Escaleta 32 Teclas",
       "imagem": "",
       "preco": 159.9,
@@ -401,7 +401,7 @@
       "estoque": 20
     },
     {
-      "id": 41,
+      "id": "41",
       "nome": "Fone de Ouvido Studio",
       "imagem": "https://kzmusicstore.com.br/cdn/shop/files/kz-zsn-pro-kz-music-store-14.png?v=1716585548&width=1000",
       "preco": 390,
@@ -411,7 +411,7 @@
       "estoque": 110
     },
     {
-      "id": 42,
+      "id": "42",
       "nome": "Amplificador para Guitarra",
       "imagem": "",
       "preco": 899.9,
@@ -421,7 +421,7 @@
       "estoque": 9
     },
     {
-      "id": 43,
+      "id": "43",
       "nome": "Amplificador para Baixo",
       "imagem": "",
       "preco": 1199.9,
@@ -431,7 +431,7 @@
       "estoque": 5
     },
     {
-      "id": 44,
+      "id": "44",
       "nome": "Microfone Condensador",
       "imagem": "",
       "preco": 599.9,
@@ -441,7 +441,7 @@
       "estoque": 14
     },
     {
-      "id": 45,
+      "id": "45",
       "nome": "Microfone Dinâmico",
       "imagem": "",
       "preco": 349.9,
@@ -451,7 +451,7 @@
       "estoque": 18
     },
     {
-      "id": 46,
+      "id": "46",
       "nome": "Mesa de Som 8 Canais",
       "imagem": "",
       "preco": 1499.9,
@@ -461,7 +461,7 @@
       "estoque": 4
     },
     {
-      "id": 47,
+      "id": "47",
       "nome": "Interface de Áudio USB",
       "imagem": "",
       "preco": 899.9,
@@ -471,7 +471,7 @@
       "estoque": 6
     },
     {
-      "id": 48,
+      "id": "48",
       "nome": "Monitor de Áudio de Estúdio",
       "imagem": "",
       "preco": 1299.9,
@@ -481,7 +481,7 @@
       "estoque": 6
     },
     {
-      "id": 49,
+      "id": "49",
       "nome": "Microfone Sem Fio Duplo",
       "imagem": "",
       "preco": 899.9,
@@ -491,7 +491,7 @@
       "estoque": 5
     },
     {
-      "id": 50,
+      "id": "50",
       "nome": "Gravador de Áudio Portátil",
       "imagem": "",
       "preco": 1199.9,
@@ -499,11 +499,21 @@
       "marca": "Zoom",
       "categoria": "Áudio",
       "estoque": 4
+    },
+    {
+      "nome": "TESTE",
+      "imagem": "TESTE.PNG",
+      "preco": 1000,
+      "desconto": 0.15,
+      "marca": "TESTE",
+      "categoria": "TESTE",
+      "estoque": 1,
+      "id": "c2XBr5D4yMY"
     }
   ],
   "clientes": [
     {
-      "id": 1,
+      "id": "1",
       "cpf": "12345678910",
       "nome": "Enzo",
       "sobrenome": "Silva",
@@ -511,5 +521,6 @@
       "email": "enzo@email.com",
       "senha": "teste123"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

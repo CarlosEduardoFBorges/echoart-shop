@@ -50,12 +50,20 @@ h1 {
     background-color: var(--fundo-tres);
 }
 
+
+
 .campo-id input {
     width: 110px;
 }
 
-.campo-preco input {
-    width: 150px;
+.campo-flex {
+    display: flex;
+    margin: 0 auto;
+}
+
+.campo-preco input,
+.campo-desconto input {
+    width: 80%;
 }
 
 .campo-estoque input {
@@ -63,7 +71,6 @@ h1 {
 }
 
 .btn-cadastrar {
-    align-self: center;
     width: 80%;
     height: 40px;
     border: none;
@@ -72,6 +79,7 @@ h1 {
     color: white;
     font-size: 1rem;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .btn-cadastrar:hover {

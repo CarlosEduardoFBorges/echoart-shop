@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProdutoService } from '../../../services/produto.service';
 import { Produto } from '../../../models/Produtos';
@@ -14,6 +14,7 @@ export class FormularioProdutos implements OnInit {
     produto: Produto = {} as Produto;
     private service = inject(ProdutoService);
     private router = inject(Router);
+    private cdr = inject(ChangeDetectorRef);
 
     private route = inject(ActivatedRoute);
     produtoId: string | null = this.route.snapshot.paramMap.get('id');
@@ -21,7 +22,10 @@ export class FormularioProdutos implements OnInit {
     ngOnInit() {
         if (this.produtoId) {
             this.service.buscarPorID(this.produtoId).subscribe({
-                next: (produto) => this.produto = produto,
+                next: (produto) => {
+                    this.produto = produto,
+                        this.cdr.markForCheck();
+                },
                 error: () => alert('Produto não encontrado.')
             })
         }
@@ -32,7 +36,7 @@ export class FormularioProdutos implements OnInit {
             this.service.editar(this.produto).subscribe({
                 next: (produto) => {
                     this.produto = produto;
-                    this.router.navigate(['/manutencao-produtos']);
+                    this.router.navigate(['/gestao/manutencao-produtos']);
                 },
                 error: () => alert('Erro ao alterar produto.')
             });
@@ -41,7 +45,7 @@ export class FormularioProdutos implements OnInit {
                 next: (produto) => {
                     this.produto = produto;
                     alert(`Produto ${this.produto.nome} foi cadastrado com sucesso.`);
-                    this.router.navigate(['/manutencao-produtos'])
+                    this.router.navigate(['/gestao/manutencao-produtos']);
                 }
             })
         }
