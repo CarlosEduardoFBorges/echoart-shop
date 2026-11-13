@@ -1,5 +1,5 @@
 export class Cliente {
-    id: number;
+    id: string;
     nome: string;
     sobrenome: string;
     cpf: string;
@@ -8,7 +8,7 @@ export class Cliente {
     senha: string;
 
     constructor(
-        id: number,
+        id: string,
         nome: string,
         sobrenome: string,
         cpf: string,

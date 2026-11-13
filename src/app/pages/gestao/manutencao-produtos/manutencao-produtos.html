@@ -2,55 +2,61 @@
     <div class="tabela-container">
         <div class="topo">
             <h1>Produtos Cadastrados</h1>
-            <form class="busca" action="">
+            <!-- <form class="busca" action="">
                 <input type="search" name="search" id="search" placeholder="Buscar..." />
-            </form>
+            </form><br> -->
+            <div class="btn">
+                <button class="btn-incluir" routerLink="/gestao/formulario-produtos">
+                    Incluir
+                </button>
+            </div>
         </div>
+
 
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Imagem</th>
                     <th>Nome</th>
                     <th>Preço</th>
                     <th>Desconto</th>
                     <th>Marca</th>
+                    <th>Categoria</th>
                     <th>Estoque</th>
-                    <th>Valor do Desconto</th>
-                    <th>Valor Final</th>
+                    <!-- <th>Valor do Desconto</th>
+                    <th>Valor Final</th> -->
                     <th>Ações</th>
                 </tr>
             </thead>
 
             <tbody>
-                <!-- 
-                @for (produto of listaProdutos; track produto ){
+
+                @for (produto of listaProdutos; track produto.id ){
                 <tr>
                     <td>{{ produto.id }}</td>
+                    <td class="imagem"><img src={{produto.imagem}}></td>
                     <td>{{ produto.nome }}</td>
-                    <td>R$ {{ produto.preco.toFixed(2)}}</td>
+                    <td>R$ {{ produto.preco}}</td>
                     <td>{{ produto.desconto }}%</td>
                     <td>{{ produto.marca }} </td>
+                    <td>{{ produto.categoria }}</td>
                     <td>{{ produto.estoque }}</td>
-                    <td>R$ {{ produto.valorDesconto.toFixed(2) }}</td>
-                    <td>R$ {{ produto.totalFinal }}</td>
+                    <!-- <td>R$ {{ produto.valorDesconto}}</td>
+                    <td>R$ {{ produto.totalFinal }}</td> -->
 
                     <td class="acoes">
-                        <button class="btn-editar" (click)="onBotaoClicado()">
+                        <button class="btn-editar" [routerLink]="['/gestao/formulario-produtos', produto.id]">
                             Editar
                         </button>
 
-                        <button class="btn-excluir" (click)="onBotaoClicado()">
+                        <button class="btn-excluir" (click)="excluir(produto.id)">
                             Excluir
                         </button>
                     </td>
                 </tr>
-                } -->
+                }
             </tbody>
         </table>
     </div>
-
-    <button class="btn-incluir" (click)="onBotaoClicado()" routerLink="/gestao/controle-produtos">
-        Incluir
-    </button>
 </div>

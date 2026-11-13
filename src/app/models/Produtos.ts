@@ -1,5 +1,5 @@
 export class Produto {
-    id: number;
+    id: string;
     nome: string;
     imagem: string;
     preco: number;
@@ -11,16 +11,14 @@ export class Produto {
     totalFinal: number;
 
     constructor(
-        id: number,
+        id: string,
         nome: string,
         imagem: string,
         preco: number,
         desconto: number,
         marca: string,
         categoria: string,
-        estoque: number,
-        valorDesconto: number,
-        totalFinal: number,
+        estoque: number
     ) {
         this.id = id;
         this.nome = nome;
@@ -30,7 +28,7 @@ export class Produto {
         this.marca = marca;
         this.categoria = categoria;
         this.estoque = estoque;
-        this.valorDesconto = preco * desconto;
-        this.totalFinal = preco - valorDesconto;
+        this.valorDesconto = this.preco * this.desconto;
+        this.totalFinal = this.preco - this.valorDesconto;
     }
 }
