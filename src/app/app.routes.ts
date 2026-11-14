@@ -15,7 +15,7 @@ export const routes: Routes = [
     { path: 'gestao', component: Gestao },
     { path: 'gestao/cadastro-clientes', component: GestaoClientes },
     { path: 'gestao/formulario-clientes', component: FormularioClientes },
-    { path: 'gestao/manutencao-produtos', component: GestaoProdutos },
+    { path: 'gestao/gestao-produtos', component: GestaoProdutos },
     { path: 'gestao/formulario-produtos', component: FormularioProdutos },
     { path: 'gestao/formulario-produtos/:id', component: FormularioProdutos },
 ];
