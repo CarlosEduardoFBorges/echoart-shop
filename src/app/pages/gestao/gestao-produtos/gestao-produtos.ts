@@ -26,9 +26,9 @@ export class GestaoProdutos {
                 console.log('Produtos recebidos:', produtos);
 
                 this.listaProdutos = produtos;
-                this.cdr.markForCheck();
+                this.cdr.markForCheck(); // faz o @for do html carregar corretamente, sem precisar de refresh no .html
 
-                console.log('Lista atribuída:', this.listaProdutos);
+                console.log('Lista atribuída:', produtos); // mostra a lista de produtos no console
             },
             error: (erro) => {
                 console.error('Erro ao carregar produtos:', erro);
@@ -39,6 +39,8 @@ export class GestaoProdutos {
     editar(id: string) {
         console.log('Editar produto: ', id);
     }
+
+    // console.log() gera um log, facilita no debug 
 
     excluir(id: string) {
 
