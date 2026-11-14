@@ -37,7 +37,7 @@ export class FormularioProdutos implements OnInit {
             this.service.editar(this.produto).subscribe({
                 next: (produto) => {
                     this.produto = produto;
-                    this.router.navigate(['/gestao/manutencao-produtos']);
+                    this.router.navigate(['/gestao/gestao-produtos']);
                 },
                 error: () => alert('Erro ao alterar produto.')
             });
@@ -46,7 +46,7 @@ export class FormularioProdutos implements OnInit {
                 next: (produto) => {
                     this.produto = produto;
                     alert(`Produto ${this.produto.nome} foi cadastrado com sucesso.`);
-                    this.router.navigate(['/gestao/manutencao-produtos']);
+                    this.router.navigate(['/gestao/gestao-produtos']);
                 }
             })
         }

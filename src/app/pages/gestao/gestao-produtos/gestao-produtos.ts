@@ -49,7 +49,7 @@ export class GestaoProdutos {
                 next: () => {
 
                     this.listaProdutos = this.listaProdutos.filter(produto => produto.id !== id);
-                    this.router.navigate(['/gestao/manutencao-produtos']);
+                    this.router.navigate(['/gestao/gestao-produtos']);
                 }
             });
         }

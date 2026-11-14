@@ -511,6 +511,5 @@
       "email": "enzo@email.com",
       "senha": "teste123"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
