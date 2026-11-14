@@ -31,6 +31,7 @@ export class FormularioProdutos implements OnInit {
         }
     }
 
+    // salva a edição/adição
     salvar() {
         if (this.produtoId) {
             this.service.editar(this.produto).subscribe({
@@ -40,7 +41,7 @@ export class FormularioProdutos implements OnInit {
                 },
                 error: () => alert('Erro ao alterar produto.')
             });
-        } else {
+        } else { // se o id do produto não existir, ele cria um produto novo
             this.service.incluir(this.produto).subscribe({
                 next: (produto) => {
                     this.produto = produto;
