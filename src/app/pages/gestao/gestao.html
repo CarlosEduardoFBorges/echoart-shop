@@ -3,21 +3,28 @@
         <h1><img src="/assets/icons/musica.svg" alt="">Bem-vindo, {{usuario.toLocaleLowerCase()}}! </h1>
         <h3>O que deseja fazer?</h3>
     </div>
+    <hr>
     <div class="escolhas">
         <div class="clientes">
-            <button class="cadastro-clientes" routerLink="/gestao/cadastro-clientes">
-                Cadastro de Clientes
+            <div>
+                <h3>Gerenciar Clientes</h3>
+            </div>
+            <button class="cadastro-clientes" routerLink="/gestao/gestao-clientes">
+                Gestão - Clientes
             </button>
             <button class="formulario-clientes" routerLink="/gestao/formulario-clientes">
-                Formulário de Clientes
+                Formulário - Clientes
             </button>
         </div>
         <div class="produtos">
-            <button class="manutencao-produtos" routerLink="/gestao/manutencao-produtos">
-                Manutenção de Produtos
+            <div>
+                <h3>Gerenciar Produtos</h3>
+            </div>
+            <button class="manutencao-produtos" routerLink="/gestao/gestao-produtos">
+                Gestão - Produtos
             </button>
             <button class="controle-produtos" routerLink="/gestao/formulario-produtos">
-                Formulário de Produtos
+                Formulário - Produtos
             </button>
         </div>
     </div>

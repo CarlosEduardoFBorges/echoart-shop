@@ -7,11 +7,11 @@ import { Router } from '@angular/router';
 
 @Component({
     imports: [RouterLink],
-    selector: 'app-manutencao-produtos',
-    styleUrl: './manutencao-produtos.css',
-    templateUrl: './manutencao-produtos.html',
+    selector: 'app-gestao-produtos',
+    styleUrl: './gestao-produtos.css',
+    templateUrl: './gestao-produtos.html',
 })
-export class ManutencaoProdutos {
+export class GestaoProdutos {
 
     private service = inject(ProdutoService);
     // pra corrigir o erro chato de não atualizar o @for do html quando carrega a página:

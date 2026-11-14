@@ -499,16 +499,6 @@
       "marca": "Zoom",
       "categoria": "Áudio",
       "estoque": 4
-    },
-    {
-      "nome": "TESTE",
-      "imagem": "TESTE.PNG",
-      "preco": 1000,
-      "desconto": 0.15,
-      "marca": "TESTE",
-      "categoria": "TESTE",
-      "estoque": 1,
-      "id": "c2XBr5D4yMY"
     }
   ],
   "clientes": [
