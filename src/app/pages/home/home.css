@@ -163,10 +163,20 @@ a {
 
 .botao-card {
     padding: .5rem;
+    border: none;
     border-radius: 6px;
     background-color: var(--fundo-um);
     color: var(--cor-letra-clara);
+    font-size: 1rem;
     text-align: center;
+    cursor: pointer;
+}
+
+
+.botao-card:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+    filter: none;
 }
 
 
@@ -236,4 +246,40 @@ a {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* seções por instrumento */
+.secao-titulo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: .4rem;
+    border-bottom: 2px solid var(--fundo-um);
+}
+
+
+.secao-icone {
+    width: 28px;
+    height: 28px;
+}
+
+
+.marca {
+    margin: 0;
+    color: #777;
+    font-size: .85rem;
+}
+
+
+/* produto sem foto: mostra o ícone da categoria menor */
+.card-imagem.sem-foto {
+    padding: 2rem;
+    opacity: .6;
+}
+
+
+.aviso {
+    padding: 1rem;
+    text-align: center;
+    color: var(--fundo-um);
 }   
