@@ -7,6 +7,7 @@ export class Produto {
     marca: string;
     categoria: string;
     estoque: number;
+    recomendado: boolean; // true = aparece na página inicial
 
     constructor(
         id: string,
@@ -16,7 +17,8 @@ export class Produto {
         desconto: number,
         marca: string,
         categoria: string,
-        estoque: number
+        estoque: number,
+        recomendado: boolean = false
     ) {
         this.id = id;
         this.nome = nome;
@@ -26,5 +28,6 @@ export class Produto {
         this.marca = marca;
         this.categoria = categoria;
         this.estoque = estoque;
+        this.recomendado = recomendado;
     }
 }
