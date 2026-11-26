@@ -507,9 +507,90 @@
       "cpf": "12345678910",
       "nome": "Enzo",
       "sobrenome": "Silva",
-      "dtNascimento": "2005-01-10",
+      "dataNascimento": "2005-01-10",
       "email": "enzo@email.com",
       "senha": "teste123"
+    },
+    {
+      "id": "2",
+      "cpf": "45678912300",
+      "nome": "Mariana",
+      "sobrenome": "Santos",
+      "dataNascimento": "2001-08-22",
+      "email": "mariana@email.com",
+      "senha": "mari123"
+    },
+    {
+      "id": "3",
+      "cpf": "78912345600",
+      "nome": "Gabriel",
+      "sobrenome": "Costa",
+      "dataNascimento": "2004-03-12",
+      "email": "gabriel@email.com",
+      "senha": "gabriel123"
+    },
+    {
+      "id": "4",
+      "cpf": "32165498700",
+      "nome": "Ana",
+      "sobrenome": "Ferreira",
+      "dataNascimento": "2003-11-30",
+      "email": "ana@email.com",
+      "senha": "ana12345"
+    },
+    {
+      "id": "5",
+      "cpf": "65432178900",
+      "nome": "Pedro",
+      "sobrenome": "Almeida",
+      "dataNascimento": "2000-07-18",
+      "email": "pedro@email.com",
+      "senha": "pedro123"
+    },
+    {
+      "id": "6",
+      "cpf": "15975348600",
+      "nome": "Juliana",
+      "sobrenome": "Rodrigues",
+      "dataNascimento": "2005-02-25",
+      "email": "juliana@email.com",
+      "senha": "juli123"
+    },
+    {
+      "id": "7",
+      "cpf": "85274196300",
+      "nome": "Rafael",
+      "sobrenome": "Martins",
+      "dataNascimento": "1999-09-09",
+      "email": "rafael@email.com",
+      "senha": "rafa123"
+    },
+    {
+      "id": "8",
+      "cpf": "75315984200",
+      "nome": "Beatriz",
+      "sobrenome": "Lima",
+      "dataNascimento": "2002-12-14",
+      "email": "beatriz@email.com",
+      "senha": "bia12345"
+    },
+    {
+      "id": "9",
+      "cpf": "95135785200",
+      "nome": "Matheus",
+      "sobrenome": "Gomes",
+      "dataNascimento": "2004-06-05",
+      "email": "matheus@email.com",
+      "senha": "math123"
+    },
+    {
+      "id": "10",
+      "cpf": "35715948600",
+      "nome": "Camila",
+      "sobrenome": "Barbosa",
+      "dataNascimento": "2001-04-20",
+      "email": "camila@email.com",
+      "senha": "cami123"
     }
   ]
 }

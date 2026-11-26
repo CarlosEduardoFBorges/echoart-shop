@@ -1,55 +1,50 @@
 <div class="content-container">
-
-
-    <div class="tabela-container">
-        <div class="topo">
-            <h1>Clientes Cadastrados</h1>
-            <form class="busca" action="">
-                <input type="search" name="search" id="search" placeholder="Buscar...">
-            </form>
-        </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Sobrenome</th>
-                    <th>CPF</th>
-                    <th>Data de Nascimento</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                @for (cliente of listaClientes; track cliente.id ){
-                <tr>
-                    <td>{{ cliente.id }}</td>
-                    <td>{{ cliente.nome }}</td>
-                    <td>{{ cliente.sobrenome }}</td>
-                    <td>{{ cliente.cpf }} </td>
-                    <td>{{ cliente.dataNascimento }}</td>
-
-                    <td class="acoes">
-                        <button class="btn-editar" (click)="onBotaoClicado()">
-                            Editar
-                        </button>
-
-                        <button class="btn-excluir" (click)="onBotaoClicado()">
-                            Excluir
-                        </button>
-                    </td>
-                </tr>
-                }
-
-            </tbody>
-        </table>
+  <div class="tabela-container">
+    <div class="topo">
+      <h1>Clientes Cadastrados</h1>
+      <div class="btn">
+        <button class="btn-incluir" routerLink="/gestao/formulario-clientes">
+          + Novo Cliente
+        </button>
+      </div>
     </div>
 
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>E-mail</th>
+          <th>CPF</th>
+          <th>Data de Nascimento</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
 
-    <button class="btn-incluir" (click)="onBotaoClicado()" routerLink="/gestao/formulario-clientes">
-        Incluir
-    </button>
-
+      <tbody>
+        @for (cliente of listaClientes; track cliente.id) {
+          <tr>
+            <td>{{ cliente.id }}</td>
+            <td>{{ cliente.nome }}</td>
+            <td>{{ cliente.sobrenome }}</td>
+            <td>{{ cliente.email }}</td>
+            <td>{{ cliente.cpf }}</td>
+            <td>{{ cliente.dataNascimento }}</td>
+            <td class="acoes">
+              <button
+                class="btn-editar"
+                [routerLink]="['/gestao/formulario-clientes', cliente.id]"
+              >
+                Editar
+              </button>
+              <button class="btn-excluir" (click)="excluir(cliente.id)">
+                Excluir
+              </button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
 </div>
