@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+.pagina {
+  width: 100%;
+  padding: 20px;
+}
+
+.content-container {
+  width: 90%;
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 28px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  background-color: var(--fundo-dois);
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.campo-duplo {
+  display: flex;
+  gap: 14px;
+}
+
+.campo-duplo .campo {
+  flex: 1;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: var(--fundo-um);
+}
+
+.botoes {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-salvar {
+  background-color: var(--fundo-um);
+  color: var(--cor-letra-clara);
+}
+
+.btn-salvar:hover {
+  background-color: color-mix(in srgb, var(--fundo-um) 85%, black);
+}
+
+.btn-voltar {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn-voltar:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 600px) {
+  .campo-duplo {
+    flex-direction: column;
+  }
+}

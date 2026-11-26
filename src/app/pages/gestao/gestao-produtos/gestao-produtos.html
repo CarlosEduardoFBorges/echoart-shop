@@ -1,0 +1,62 @@
+<div class="content-container">
+    <div class="tabela-container">
+        <div class="topo">
+            <h1>Produtos Cadastrados</h1>
+            <!-- <form class="busca" action="">
+                <input type="search" name="search" id="search" placeholder="Buscar..." />
+            </form><br> -->
+            <div class="btn">
+                <button class="btn-incluir" routerLink="/gestao/formulario-produtos">
+                    Incluir
+                </button>
+            </div>
+        </div>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagem</th>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Desconto</th>
+                    <th>Marca</th>
+                    <th>Categoria</th>
+                    <th>Estoque</th>
+                    <th>Valor do Desconto</th>
+                    <th>Valor Final</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                @for (produto of listaProdutos; track produto.id ){
+                <tr>
+                    <td>{{ produto.id }}</td>
+                    <td class="imagem"><img src={{produto.imagem}} alt=""></td>
+                    <td>{{ produto.nome }}</td>
+                    <td>R$ {{ produto.preco}}</td>
+                    <td>{{ produto.desconto }}%</td>
+                    <td>{{ produto.marca }} </td>
+                    <td>{{ produto.categoria }}</td>
+                    <td>{{ produto.estoque }}</td>
+                    <td>R$ {{ (produto.preco * produto.desconto).toFixed(2)}}</td>
+                    <td>R$ {{ (produto.preco - (produto.preco * produto.desconto)).toFixed(2) }}</td>
+
+                    <td class="acoes">
+                        <button class="btn-editar" [routerLink]="['/gestao/formulario-produtos', produto.id]">
+                            Editar
+                        </button>
+
+                        <button class="btn-excluir" (click)="excluir(produto.id)">
+                            Excluir
+                        </button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

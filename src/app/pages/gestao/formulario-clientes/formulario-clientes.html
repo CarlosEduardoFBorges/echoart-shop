@@ -1,0 +1,53 @@
+<div class="pagina">
+  <main class="content-container">
+    <h1>{{ clienteId ? 'Editar Cliente' : 'Cadastro de Clientes' }}</h1>
+
+    <form class="formulario" (ngSubmit)="salvar()">
+      @if (clienteId) {
+        <div class="campo">
+          <label for="id">ID</label>
+          <input id="id" name="id" type="text" [(ngModel)]="cliente.id" readonly />
+        </div>
+      }
+
+      <div class="campo-duplo">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Digite o nome" required [(ngModel)]="cliente.nome" />
+        </div>
+
+        <div class="campo">
+          <label for="sobrenome">Sobrenome</label>
+          <input id="sobrenome" name="sobrenome" type="text" placeholder="Digite o sobrenome" required [(ngModel)]="cliente.sobrenome" />
+        </div>
+      </div>
+
+      <div class="campo-duplo">
+        <div class="campo">
+          <label for="cpf">CPF</label>
+          <input id="cpf" name="cpf" type="text" placeholder="Somente números" required [(ngModel)]="cliente.cpf" />
+        </div>
+
+        <div class="campo">
+          <label for="dataNascimento">Data de Nascimento</label>
+          <input id="dataNascimento" name="dataNascimento" type="date" required [(ngModel)]="cliente.dataNascimento" />
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="exemplo@email.com" required [(ngModel)]="cliente.email" />
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" type="password" placeholder="Digite a senha" required [(ngModel)]="cliente.senha" />
+      </div>
+
+      <div class="botoes">
+        <button type="submit" class="btn-salvar">Salvar</button>
+        <button type="button" class="btn-voltar" routerLink="/gestao/cadastro-clientes">Voltar</button>
+      </div>
+    </form>
+  </main>
+</div>

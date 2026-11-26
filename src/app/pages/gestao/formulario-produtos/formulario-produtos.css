@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+.pagina {
+    width: 100%;
+}
+
+.content-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 14px auto 30px;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 20px;
+    background-color: var(--fundo-dois);
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.formulario {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.campo {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.campo label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.campo input {
+    width: 100%;
+    /* height: 24px; */
+    padding: 10px 8px;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: var(--fundo-tres);
+}
+
+
+
+.campo-id input {
+    width: 110px;
+}
+
+.campo-flex {
+    display: flex;
+    margin: 0 auto;
+}
+
+.campo-preco input,
+.campo-desconto input {
+    width: 80%;
+}
+
+.campo-estoque input {
+    width: 250px;
+}
+
+.btn-cadastrar {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--fundo-um);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.btn-cadastrar:hover {
+    background-color: color-mix(in srgb, var(--fundo-um) 90%, black);
+}
+
+@media (max-width: 600px) {
+    .content-container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
